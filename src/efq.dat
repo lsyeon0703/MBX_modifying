@@ -1,0 +1,217 @@
+Binary file ./bblock/libmbx_la-system.o matches
+./bblock/system.cpp:    efq = systools::ResetOrder3N(electrostaticE_.GetSysEfq(), initial_order_, first_index_, sites_);
+./bblock/system.cpp:// void System::Hack1EfqPhi() { electrostaticE_.Hack1EfqPhi(); }
+./bblock/system.h:    void Hack1EfqPhi();
+./pol.dat:./potential/electrostatics/electrostatics.cpp:        pv[i] = Efq_[i] * pol_sqrt_[i] - ts2v[i];
+./pol.dat:./potential/electrostatics/electrostatics.cpp:        pv[i] = Efq_[i] * pol_sqrt_[i] - ts2v[i];
+./pol.dat:./potential/electrostatics/electrostatics.cpp:    //    Efd = Efq - 1/pol
+./pol.dat:./potential/electrostatics/electrostatics.cpp:        pv[i] = Efq_[i] * pol_sqrt_[i] - ts2v[i];
+./pol.dat:./potential/electrostatics/electrostatics.cpp:    //    Efd = Efq - 1/pol
+./potential/lj/lj.cpp:            // Compress data in Efq and phi
+./potential/electrostatics/fields.h:                                double *Efqx_mon1,             // Output electric field on X for Mon 1
+./potential/electrostatics/fields.h:                                double *Efqy_mon1,             // Output electric field on Y for Mon 1
+./potential/electrostatics/fields.h:                                double *Efqz_mon1,             // Output electric field on Z for Mon 1
+./potential/electrostatics/fields.h:                                double *Efq2,                  // Electric field on Mon 2
+./potential/electrostatics/fields.h:                                double *Efqx_mon1,             // Output electric field on X for Mon 1
+./potential/electrostatics/fields.h:                                double *Efqy_mon1,             // Output electric field on Y for Mon 1
+./potential/electrostatics/fields.h:                                double *Efqz_mon1,             // Output electric field on Z for Mon 1
+./potential/electrostatics/fields.h:                                double *Efq2,                  // Electric field on Mon 2
+./potential/electrostatics/electrostatics.cpp:    sys_Efq_ = std::vector<double>(nsites3, 0.0);
+./potential/electrostatics/electrostatics.cpp:    Efq_ = std::vector<double>(nsites3, 0.0);
+./potential/electrostatics/electrostatics.cpp:        Efq_all_ = std::vector<double>(3 * (nExtChg + nsites_), 0.0);
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + m] = p * Efq_[fi_crd + inmon3 + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + nmon + m] = p * Efq_[fi_crd + inmon3 + nmon + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + nmon2 + m] = p * Efq_[fi_crd + inmon3 + nmon2 + m];
+./potential/electrostatics/electrostatics.cpp:        pv[i] = Efq_[i] * pol_sqrt_[i] - ts2v[i];
+./potential/electrostatics/electrostatics.cpp:                Efq_all_[inmon3 + m + fi_crd] += external_ef_[fi_crd + mns3 + 3 * i];
+./potential/electrostatics/electrostatics.cpp:                Efq_all_[inmon3 + m + fi_crd + nmon] += external_ef_[fi_crd + mns3 + 3 * i + 1];
+./potential/electrostatics/electrostatics.cpp:                Efq_all_[inmon3 + m + fi_crd + nmon2] += external_ef_[fi_crd + mns3 + 3 * i + 2];
+./potential/electrostatics/electrostatics.cpp:std::vector<double> Electrostatics::GetSysEfq() { return sys_Efq_all_; }
+./potential/electrostatics/electrostatics.cpp:        std::vector<std::vector<double>> Efq_1_pool;
+./potential/electrostatics/electrostatics.cpp:        std::vector<std::vector<double>> Efq_2_pool;
+./potential/electrostatics/electrostatics.cpp:            Efq_1_pool.push_back(std::vector<double>(nmon1 * ns1 * 3, 0.0));
+./potential/electrostatics/electrostatics.cpp:            Efq_2_pool.push_back(std::vector<double>(nmon2 * ns2 * 3, 0.0));
+./potential/electrostatics/electrostatics.cpp:                std::vector<double> Efq_sitej(3 * size_j, 0.0);
+./potential/electrostatics/electrostatics.cpp:                    g34_, &ex_thread, &ey_thread, &ez_thread, &phi1_thread, phi_sitej.data(), Efq_sitej.data(),
+./potential/electrostatics/electrostatics.cpp:                        Efq_2_pool[rank][nmon2 * dim + m2init + ind] += Efq_sitej[dim * size_j + ind];
+./potential/electrostatics/electrostatics.cpp:                Efq_1_pool[rank][inmon13 + m1] += ex_thread;
+./potential/electrostatics/electrostatics.cpp:                Efq_1_pool[rank][inmon13 + nmon1 + m1] += ey_thread;
+./potential/electrostatics/electrostatics.cpp:                Efq_1_pool[rank][inmon13 + nmon12 + m1] += ez_thread;
+./potential/electrostatics/electrostatics.cpp:        // Compress data in Efq and phi
+./potential/electrostatics/electrostatics.cpp:            size_t kend1 = Efq_1_pool[rank].size();
+./potential/electrostatics/electrostatics.cpp:            size_t kend2 = Efq_2_pool[rank].size();
+./potential/electrostatics/electrostatics.cpp:                ef_x_[3 * k] += Efq_2_pool[rank][k];
+./potential/electrostatics/electrostatics.cpp:                ef_x_[3 * k + 1] += Efq_2_pool[rank][k + np];
+./potential/electrostatics/electrostatics.cpp:                ef_x_[3 * k + 2] += Efq_2_pool[rank][k + np * 2];
+./potential/electrostatics/electrostatics.cpp:    sys_Efq_all_ = std::vector<double>(3 * (nsites_), 0.0);
+./potential/electrostatics/electrostatics.cpp:                    //    external_dmui_[3*fi_crd + 9*ns*mt + 9*i + j] * sys_Efq_all_[fi_crd + mt*ns*3 + 3*i] *
+./potential/electrostatics/electrostatics.cpp:                    //  + external_dmui_[3*fi_crd + 9*ns*mt + 9*i + 3 + j] * sys_Efq_all_[fi_crd + mt*ns*3 + 3*i + 1] *
+./potential/electrostatics/electrostatics.cpp:                    //  + external_dmui_[3*fi_crd + 9*ns*mt + 9*i + 6 + j] * sys_Efq_all_[fi_crd + mt*ns*3 + 3*i + 2] *
+./potential/electrostatics/electrostatics.cpp:                    //    (external_dmui_[3 * fi_crd + 9 * ns * m + 9 * i + j] * sys_Efq_all_[fi_crd + m * ns * 3 + 3 *
+./potential/electrostatics/electrostatics.cpp:                    //         sys_Efq_all_[fi_crd + m * ns * 3 + 3 * i + 1] +
+./potential/electrostatics/electrostatics.cpp:                    //         sys_Efq_all_[fi_crd + m * ns * 3 + 3 * i + 2]);
+./potential/electrostatics/electrostatics.cpp:                                                                  sys_Efq_all_[fi_crd + m * ns * 3 + 3 * i] +
+./potential/electrostatics/electrostatics.cpp:                                                                  sys_Efq_all_[fi_crd + m * ns * 3 + 3 * i + 1] +
+./potential/electrostatics/electrostatics.cpp:                                                                  sys_Efq_all_[fi_crd + m * ns * 3 + 3 * i + 2]);
+./potential/electrostatics/electrostatics.cpp:        std::fill(sys_Efq_.begin(), sys_Efq_.end(), 0.0);
+./potential/electrostatics/electrostatics.cpp:        std::fill(Efq_.begin(), Efq_.end(), 0.0);
+./potential/electrostatics/electrostatics.cpp:        Efq_all_ = std::vector<double>(3 * (nExtChg + nsites_), 0.0);
+./potential/electrostatics/electrostatics.cpp:        std::fill(Efq_all_.begin(), Efq_all_.end(), 0);
+./potential/electrostatics/electrostatics.cpp:                            &ex, &ey, &ez, &phi1, phi_all_.data() + fi_sites, Efq_all_.data() + fi_crd,
+./potential/electrostatics/electrostatics.cpp:                        Efq_all_[fi_crd + inmon3 + m] += ex;
+./potential/electrostatics/electrostatics.cpp:                        Efq_all_[fi_crd + inmon3 + nmon + m] += ey;
+./potential/electrostatics/electrostatics.cpp:                        Efq_all_[fi_crd + inmon3 + nmon2 + m] += ez;
+./potential/electrostatics/electrostatics.cpp:                                      << " Efq_= " << Efq_all_[fi_crd + inmon3 + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_all_[fi_crd + inmon3 + nmon + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_all_[fi_crd + inmon3 + nmon2 + m] << std::endl;
+./potential/electrostatics/electrostatics.cpp:            std::vector<std::vector<double>> Efq_1_pool;
+./potential/electrostatics/electrostatics.cpp:            std::vector<std::vector<double>> Efq_2_pool;
+./potential/electrostatics/electrostatics.cpp:                Efq_1_pool.push_back(std::vector<double>(nmon1 * ns1 * 3, 0.0));
+./potential/electrostatics/electrostatics.cpp:                Efq_2_pool.push_back(std::vector<double>(nmon2 * ns2 * 3, 0.0));
+./potential/electrostatics/electrostatics.cpp:                        std::vector<double> Efq_sitej(3 * size_j, 0.0);
+./potential/electrostatics/electrostatics.cpp:                        std::vector<double> reordered_Efq2(reordered_xyz2.size(), 0.0);
+./potential/electrostatics/electrostatics.cpp:                       // populates reordered_phi2 (potential on Mon 2) and reordered_Efq2 (electric field on Mon 2)
+./potential/electrostatics/electrostatics.cpp:                            &ez_thread, &phi1_thread, reordered_phi2.data(), reordered_Efq2.data(), elec_scale_factor,
+./potential/electrostatics/electrostatics.cpp:                        double *Efq2 = Efq_sitej.data();
+./potential/electrostatics/electrostatics.cpp:                        // Update the original phi2 and Efq2 (unreorder reordered_phi2 and reordered_Efq2 and add their values)
+./potential/electrostatics/electrostatics.cpp:                            Efq2[old_mon2_index - m2init] += reordered_Efq2[new_mon2_index];
+./potential/electrostatics/electrostatics.cpp:                            Efq2[nmon2 + old_mon2_index - m2init*2] += reordered_Efq2[reordered_mon2_size + new_mon2_index];
+./potential/electrostatics/electrostatics.cpp:                            Efq2[2*nmon2 + old_mon2_index - m2init*3] += reordered_Efq2[2*reordered_mon2_size + new_mon2_index];
+./potential/electrostatics/electrostatics.cpp:                                Efq_2_pool[rank][jnmon23 + nmon2 * dim + m2init + ind] += Efq_sitej[dim * size_j + ind];
+./potential/electrostatics/electrostatics.cpp:                        Efq_1_pool[rank][inmon13 + m1] += ex_thread;
+./potential/electrostatics/electrostatics.cpp:                        Efq_1_pool[rank][inmon13 + nmon1 + m1] += ey_thread;
+./potential/electrostatics/electrostatics.cpp:                        Efq_1_pool[rank][inmon13 + nmon12 + m1] += ez_thread;
+./potential/electrostatics/electrostatics.cpp:            // Compress data in Efq and phi
+./potential/electrostatics/electrostatics.cpp:                size_t kend1 = Efq_1_pool[rank].size();
+./potential/electrostatics/electrostatics.cpp:                size_t kend2 = Efq_2_pool[rank].size();
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[fi_crd1 + k] += Efq_1_pool[rank][k];
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[fi_crd2 + k] += Efq_2_pool[rank][k];
+./potential/electrostatics/electrostatics.cpp:                                      << " Efq_= " << Efq_all_[fi_crd + inmon3 + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_all_[fi_crd + inmon3 + nmon + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_all_[fi_crd + inmon3 + nmon2 + m] << std::endl;
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[3 * fi_sites + 3 * inmon + 0 * nmon + m] -= result_ptr[1];
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[3 * fi_sites + 3 * inmon + 1 * nmon + m] -= result_ptr[2];
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[3 * fi_sites + 3 * inmon + 2 * nmon + m] -= result_ptr[3];
+./potential/electrostatics/electrostatics.cpp:                                      << " Efq_= " << Efq_all_[fi_crd + inmon3 + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_all_[fi_crd + inmon3 + nmon + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_all_[fi_crd + inmon3 + nmon2 + m] << std::endl;
+./potential/electrostatics/electrostatics.cpp:    for (size_t i = 0; i < 3 * nsites_; i++) Efq_[i] = Efq_all_[i];
+./potential/electrostatics/electrostatics.cpp:    std::fill(Efq_all_.begin(), Efq_all_.end(), 0);
+./potential/electrostatics/electrostatics.cpp:                        &ey, &ez, &phi1, phi_all_.data() + fi_sites, Efq_all_.data() + fi_crd, elec_scale_factor,
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[fi_crd + inmon3 + m] += ex;
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[fi_crd + inmon3 + nmon + m] += ey;
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[fi_crd + inmon3 + nmon2 + m] += ez;
+./potential/electrostatics/electrostatics.cpp:                                      << " Efq_= " << Efq_[fi_crd + inmon3 + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_[fi_crd + inmon3 + nmon + m] << " " << Efq_[fi_crd + inmon3 + nmon2 + m]
+./potential/electrostatics/electrostatics.cpp:            std::vector<std::vector<double>> Efq_1_pool;
+./potential/electrostatics/electrostatics.cpp:            std::vector<std::vector<double>> Efq_2_pool;
+./potential/electrostatics/electrostatics.cpp:                Efq_1_pool.push_back(std::vector<double>(nmon1 * ns1 * 3, 0.0));
+./potential/electrostatics/electrostatics.cpp:                Efq_2_pool.push_back(std::vector<double>(nmon2 * ns2 * 3, 0.0));
+./potential/electrostatics/electrostatics.cpp:                        std::vector<double> Efq_sitej(3 * size_j, 0.0);
+./potential/electrostatics/electrostatics.cpp:                        std::vector<double> reordered_Efq2(reordered_xyz2.size(), 0.0);
+./potential/electrostatics/electrostatics.cpp:                        // populates reordered_phi2 (potential on monomer 2) and reordered_Efq2 (electric field on monomer 2)
+./potential/electrostatics/electrostatics.cpp:                            &ez_thread, &phi1_thread, reordered_phi2.data(), reordered_Efq2.data(), elec_scale_factor,
+./potential/electrostatics/electrostatics.cpp:                        double *Efq2 = Efq_sitej.data();
+./potential/electrostatics/electrostatics.cpp:                        // Update the original phi2 and Efq2 (unreorder reordered_phi2 and reordered_Efq2 and add their values)
+./potential/electrostatics/electrostatics.cpp:                            Efq2[old_mon2_index - m2init] += reordered_Efq2[new_mon2_index];
+./potential/electrostatics/electrostatics.cpp:                            Efq2[nmon2 + old_mon2_index - m2init*2] += reordered_Efq2[reordered_mon2_size + new_mon2_index];
+./potential/electrostatics/electrostatics.cpp:                            Efq2[2*nmon2 + old_mon2_index - m2init*3] += reordered_Efq2[2*reordered_mon2_size + new_mon2_index];
+./potential/electrostatics/electrostatics.cpp:                                Efq_2_pool[rank][jnmon23 + nmon2 * dim + m2init + ind] += Efq_sitej[dim * size_j + ind];
+./potential/electrostatics/electrostatics.cpp:                        Efq_1_pool[rank][inmon13 + m1] += ex_thread;
+./potential/electrostatics/electrostatics.cpp:                        Efq_1_pool[rank][inmon13 + nmon1 + m1] += ey_thread;
+./potential/electrostatics/electrostatics.cpp:                        Efq_1_pool[rank][inmon13 + nmon12 + m1] += ez_thread;
+./potential/electrostatics/electrostatics.cpp:            // Compress data in Efq and phi
+./potential/electrostatics/electrostatics.cpp:                size_t kend1 = Efq_1_pool[rank].size();
+./potential/electrostatics/electrostatics.cpp:                size_t kend2 = Efq_2_pool[rank].size();
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[fi_crd1 + k] += Efq_1_pool[rank][k];
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[fi_crd2 + k] += Efq_2_pool[rank][k];
+./potential/electrostatics/electrostatics.cpp:    MPI_Allreduce(MPI_IN_PLACE, Efq_.data(), Efq_.size(), MPI_DOUBLE, MPI_SUM, world_);
+./potential/electrostatics/electrostatics.cpp:                                      << " Efq_= " << Efq_[fi_crd + inmon3 + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_[fi_crd + inmon3 + nmon + m] << " " << Efq_[fi_crd + inmon3 + nmon2 + m]
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[3 * fi_sites + 3 * inmon + 0 * nmon + m] -= result_ptr[1];
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[3 * fi_sites + 3 * inmon + 1 * nmon + m] -= result_ptr[2];
+./potential/electrostatics/electrostatics.cpp:                    Efq_all_[3 * fi_sites + 3 * inmon + 2 * nmon + m] -= result_ptr[3];
+./potential/electrostatics/electrostatics.cpp:                                      << " Efq_= " << Efq_[fi_crd + inmon3 + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_[fi_crd + inmon3 + nmon + m] << " " << Efq_[fi_crd + inmon3 + nmon2 + m]
+./potential/electrostatics/electrostatics.cpp:    for (size_t i = 0; i < 3 * nsites_; i++) Efq_[i] = Efq_all_[i];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + m] = p * Efq_[fi_crd + inmon3 + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + nmon + m] = p * Efq_[fi_crd + inmon3 + nmon + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + nmon2 + m] = p * Efq_[fi_crd + inmon3 + nmon2 + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + m] = p * Efq_[fi_crd + inmon3 + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + nmon + m] = p * Efq_[fi_crd + inmon3 + nmon + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + nmon2 + m] = p * Efq_[fi_crd + inmon3 + nmon2 + m];
+./potential/electrostatics/electrostatics.cpp:    reverse_forward_comm(Efq_);
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + m] = p * Efq_[fi_crd + inmon3 + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + nmon + m] = p * Efq_[fi_crd + inmon3 + nmon + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + nmon2 + m] = p * Efq_[fi_crd + inmon3 + nmon2 + m];
+./potential/electrostatics/electrostatics.cpp:                                      << xyz_[fi_crd + inmon3 + nmon2 + m] << " Efq_= " << Efq_[fi_crd + inmon3 + m]
+./potential/electrostatics/electrostatics.cpp:                                      << " " << Efq_[fi_crd + inmon3 + nmon + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_[fi_crd + inmon3 + nmon2 + m]
+./potential/electrostatics/electrostatics.cpp:        pv[i] = Efq_[i] * pol_sqrt_[i] - ts2v[i];
+./potential/electrostatics/electrostatics.cpp:    //    Efd = Efq - 1/pol
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + m] = p * Efq_[fi_crd + inmon3 + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + nmon + m] = p * Efq_[fi_crd + inmon3 + nmon + m];
+./potential/electrostatics/electrostatics.cpp:                mu_[fi_crd + inmon3 + nmon2 + m] = p * Efq_[fi_crd + inmon3 + nmon2 + m];
+./potential/electrostatics/electrostatics.cpp:                                      << xyz_[fi_crd + inmon3 + nmon2 + m] << " Efq_= " << Efq_[fi_crd + inmon3 + m]
+./potential/electrostatics/electrostatics.cpp:                                      << " " << Efq_[fi_crd + inmon3 + nmon + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_[fi_crd + inmon3 + nmon2 + m]
+./potential/electrostatics/electrostatics.cpp:        pv[i] = Efq_[i] * pol_sqrt_[i] - ts2v[i];
+./potential/electrostatics/electrostatics.cpp:    //    Efd = Efq - 1/pol
+./potential/electrostatics/electrostatics.cpp:                                               alpha * p * (Efq_[fi_crd + inmon3 + m] + Efd_[fi_crd + inmon3 + m]);
+./potential/electrostatics/electrostatics.cpp:                        alpha * p * (Efq_[fi_crd + inmon3 + nmon + m] + Efd_[fi_crd + inmon3 + nmon + m]);
+./potential/electrostatics/electrostatics.cpp:                        alpha * p * (Efq_[fi_crd + inmon3 + nmon2 + m] + Efd_[fi_crd + inmon3 + nmon2 + m]);
+./potential/electrostatics/electrostatics.cpp:        reverse_forward_comm(Efq_);
+./potential/electrostatics/electrostatics.cpp:                                               alpha * p * (Efq_[fi_crd + inmon3 + m] + Efd_[fi_crd + inmon3 + m]);
+./potential/electrostatics/electrostatics.cpp:                        alpha * p * (Efq_[fi_crd + inmon3 + nmon + m] + Efd_[fi_crd + inmon3 + nmon + m]);
+./potential/electrostatics/electrostatics.cpp:                        alpha * p * (Efq_[fi_crd + inmon3 + nmon2 + m] + Efd_[fi_crd + inmon3 + nmon2 + m]);
+./potential/electrostatics/electrostatics.cpp:// in_v is Efq_all and only updating nExtChg particles
+./potential/electrostatics/electrostatics.cpp:                    mu_[fi_crd + inmon3 + m] = alpha * p * (Efq_[fi_crd + inmon3 + m] + Efd_[fi_crd + inmon3 + m]) +
+./potential/electrostatics/electrostatics.cpp:                        alpha * p * (Efq_[fi_crd + inmon3 + nmon + m] + Efd_[fi_crd + inmon3 + nmon + m]) +
+./potential/electrostatics/electrostatics.cpp:                        alpha * p * (Efq_[fi_crd + inmon3 + nmon2 + m] + Efd_[fi_crd + inmon3 + nmon2 + m]) +
+./potential/electrostatics/electrostatics.cpp:    for (size_t i = 0; i < 3 * nsites_; i++) Eind_ -= mu_[i] * Efq_[i] * islocal_atom_xyz_[i];
+./potential/electrostatics/electrostatics.cpp:    for (size_t i = 0; i < 3 * nsites_; i++) Eind_ -= mu_[i] * Efq_[i];
+./potential/electrostatics/electrostatics.cpp:    sys_Efq_all_ = std::vector<double>(3 * (nExtChg + nsites_), 0.0);
+./potential/electrostatics/electrostatics.cpp:    for (size_t i = 0; i < nsites_ * 3; i++) Efq_all_[i] = Efq_[i];
+./potential/electrostatics/electrostatics.cpp:    if (nExtChg > 0) reverse_forward_comm_ext(Efq_all_);
+./potential/electrostatics/electrostatics.cpp:                    grad_[fi_crd + inmon3 + m] -= chg_all_[fi_sites + inmon + m] * Efq_all_[fi_crd + inmon3 + m];
+./potential/electrostatics/electrostatics.cpp:                        chg_all_[fi_sites + inmon + m] * Efq_all_[fi_crd + inmon3 + nmon + m];
+./potential/electrostatics/electrostatics.cpp:                        chg_all_[fi_sites + inmon + m] * Efq_all_[fi_crd + inmon3 + nmon2 + m];
+./potential/electrostatics/electrostatics.cpp:                                      << " Efq_all_= " << Efq_all_[fi_crd + inmon3 + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_all_[fi_crd + inmon3 + nmon + m] << " "
+./potential/electrostatics/electrostatics.cpp:                                      << Efq_all_[fi_crd + inmon3 + nmon2 + m]
+./potential/electrostatics/electrostatics.cpp:                sys_Efq_all_[fi_crd + mns3 + 3 * i] = Efq_all_[inmon3 + m + fi_crd];
+./potential/electrostatics/electrostatics.cpp:                sys_Efq_all_[fi_crd + mns3 + 3 * i + 1] = Efq_all_[inmon3 + m + fi_crd + nmon];
+./potential/electrostatics/electrostatics.cpp:                sys_Efq_all_[fi_crd + mns3 + 3 * i + 2] = Efq_all_[inmon3 + m + fi_crd + nmon2];
+./potential/electrostatics/electrostatics.cpp:    sys_Efq_all_ = std::vector<double>(3 * (nExtChg + nsites_), 0.0);
+./potential/electrostatics/electrostatics.cpp:                grad_[fi_crd + inmon3 + m] -= chg_all_[fi_sites + inmon + m] * Efq_all_[fi_crd + inmon3 + m];
+./potential/electrostatics/electrostatics.cpp:                    chg_all_[fi_sites + inmon + m] * Efq_all_[fi_crd + inmon3 + nmon + m];
+./potential/electrostatics/electrostatics.cpp:                    chg_all_[fi_sites + inmon + m] * Efq_all_[fi_crd + inmon3 + nmon2 + m];
+./potential/electrostatics/electrostatics.cpp:                sys_Efq_all_[fi_crd + mns3 + 3 * i] = Efq_all_[inmon3 + m + fi_crd];
+./potential/electrostatics/electrostatics.cpp:                sys_Efq_all_[fi_crd + mns3 + 3 * i + 1] = Efq_all_[inmon3 + m + fi_crd + nmon];
+./potential/electrostatics/electrostatics.cpp:                sys_Efq_all_[fi_crd + mns3 + 3 * i + 2] = Efq_all_[inmon3 + m + fi_crd + nmon2];
+./potential/electrostatics/electrostatics.h:    void Hack1EfqPhi();
+./potential/electrostatics/electrostatics.h:    std::vector<double> GetSysEfq();
+./potential/electrostatics/electrostatics.h:    std::vector<double> sys_Efq_;
+./potential/electrostatics/electrostatics.h:    std::vector<double> Efq_;
+./potential/electrostatics/electrostatics.h:    std::vector<double> Efq_all_;
+./potential/electrostatics/electrostatics.h:    std::vector<double> sys_Efq_all_;
+Binary file ./potential/electrostatics/libmbx_la-electrostatics.o matches
+./potential/electrostatics/fields.cpp:    double aCC, double aCC1_4, double g34, double *Efqx_mon1, double *Efqy_mon1, double *Efqz_mon1, double *phi1,
+./potential/electrostatics/fields.cpp:    double *phi2, double *Efq2, double elec_scale_factor, double ewald_alpha, bool use_pbc,
+./potential/electrostatics/fields.cpp:            Efq2[site_jnmon23 + m] -= s1r3ci * rijx;
+./potential/electrostatics/fields.cpp:            Efq2[site_jnmon23 + nmon2 + m] -= s1r3ci * rijy;
+./potential/electrostatics/fields.cpp:            Efq2[site_jnmon23 + nmon22 + m] -= s1r3ci * rijz;
+./potential/electrostatics/fields.cpp:    *Efqx_mon1 = v8;
+./potential/electrostatics/fields.cpp:    *Efqy_mon1 = v9;
+./potential/electrostatics/fields.cpp:    *Efqz_mon1 = v10;
+./potential/electrostatics/fields.cpp:    double aCC, double aCC1_4, double g34, double *Efqx_mon1, double *Efqy_mon1, double *Efqz_mon1, double *phi1,
+./potential/electrostatics/fields.cpp:    double *phi2, double *Efq2, double elec_scale_factor, double ewald_alpha, bool use_pbc,
+./potential/electrostatics/fields.cpp:        Efq2[site_jnmon23 + m] -= s1r3ci * rijx;
+./potential/electrostatics/fields.cpp:        Efq2[site_jnmon23 + nmon2 + m] -= s1r3ci * rijy;
+./potential/electrostatics/fields.cpp:        Efq2[site_jnmon23 + nmon22 + m] -= s1r3ci * rijz;
+./potential/electrostatics/fields.cpp:    *Efqx_mon1 = v8;
+./potential/electrostatics/fields.cpp:    *Efqy_mon1 = v9;
+./potential/electrostatics/fields.cpp:    *Efqz_mon1 = v10;
+./potential/dispersion/dispersion.cpp:            // Compress data in Efq and phi
+./potential/buckingham/buckingham.cpp:                // Compress data in Efq and phi
+./potential/buckingham/buckingham.cpp:                // Compress data in Efq and phi

@@ -1,0 +1,69 @@
+Binary file ./bblock/libmbx_la-external_call.o matches
+Binary file ./bblock/libmbx_la-system.o matches
+./bblock/system.cpp:double System::GetPermanentElectrostaticEnergy() { return electrostaticE_.GetPermanentElectrostaticEnergy(); }
+./bblock/system.cpp:double System::GetPermanentElectrostaticEnergyExternalFieldContribution() {
+./bblock/system.cpp:    return electrostaticE_.GetPermanentElectrostaticEnergyExternalFieldContribution();
+./bblock/system.cpp:double System::GetInducedElectrostaticEnergy() { return electrostaticE_.GetInducedElectrostaticEnergy(); }
+./bblock/system.h:    double GetPermanentElectrostaticEnergy();
+./bblock/system.h:    double GetPermanentElectrostaticEnergyExternalFieldContribution();
+./bblock/system.h:    double GetInducedElectrostaticEnergy();
+./bblock/external_call.cpp:    *e = my_s->GetPermanentElectrostaticEnergyExternalFieldContribution();
+./electrostatic.dat:./bblock/system.cpp:double System::GetPermanentElectrostaticEnergy() { return electrostaticE_.GetPermanentElectrostaticEnergy(); }
+./electrostatic.dat:./bblock/system.cpp:double System::GetPermanentElectrostaticEnergyExternalFieldContribution() {
+./electrostatic.dat:./bblock/system.cpp:    return electrostaticE_.GetPermanentElectrostaticEnergyExternalFieldContribution();
+./electrostatic.dat:./bblock/system.cpp:double System::GetInducedElectrostaticEnergy() { return electrostaticE_.GetInducedElectrostaticEnergy(); }
+./electrostatic.dat:./bblock/system.h:    double GetPermanentElectrostaticEnergy();
+./electrostatic.dat:./bblock/system.h:    double GetPermanentElectrostaticEnergyExternalFieldContribution();
+./electrostatic.dat:./bblock/system.h:    double GetInducedElectrostaticEnergy();
+./electrostatic.dat:./bblock/external_call.cpp:    *e = my_s->GetPermanentElectrostaticEnergyExternalFieldContribution();
+./electrostatic.dat:./potential/electrostatics/electrostatics.cpp:double Electrostatics::GetPermanentElectrostaticEnergy() { return Eperm_; }
+./electrostatic.dat:./potential/electrostatics/electrostatics.cpp:double Electrostatics::GetPermanentElectrostaticEnergyExternalFieldContribution() { return Eperm_ext_; }
+./electrostatic.dat:./potential/electrostatics/electrostatics.cpp:double Electrostatics::GetInducedElectrostaticEnergy() { return Eind_; }
+./electrostatic.dat:./potential/electrostatics/electrostatics.h:    double GetPermanentElectrostaticEnergy();
+./electrostatic.dat:./potential/electrostatics/electrostatics.h:    double GetPermanentElectrostaticEnergyExternalFieldContribution();
+./electrostatic.dat:./potential/electrostatics/electrostatics.h:    double GetInducedElectrostaticEnergy();
+./electrostatic.dat:./tests/unittests/unittest-gas-electrostatics-mbpol.cpp:    double perm_elec = elec.GetPermanentElectrostaticEnergy();
+./electrostatic.dat:./tests/unittests/unittest-gas-electrostatics-mbpol.cpp:    double ind_elec = elec.GetInducedElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-electrostatics.cpp:        double eind = d.GetInducedElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-electrostatics.cpp:        double eperm = d.GetPermanentElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-electrostatics.cpp:                double xeind_ref = xd.GetInducedElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-electrostatics.cpp:                double xeperm_ref = xd.GetPermanentElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-electrostatics.cpp:                                double xeind = xd.GetInducedElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-electrostatics.cpp:                                double xeperm = xd.GetPermanentElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-electrostatics.cpp:    double eind = d.GetInducedElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-electrostatics.cpp:    double eperm = d.GetPermanentElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-electrostatics.cpp:    double eind2 = d2.GetInducedElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-electrostatics.cpp:    double eperm2 = d2.GetPermanentElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-system.cpp:        eperm.push_back(systems[i].GetPermanentElectrostaticEnergy());
+./electrostatic.dat:./unittests/unittest-system.cpp:        eind.push_back(systems[i].GetInducedElectrostaticEnergy());
+./electrostatic.dat:./unittests/unittest-system.cpp:    double ep = systems[1].GetPermanentElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-system.cpp:    double ei = systems[1].GetInducedElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-system.cpp:    double epext = systems[1].GetPermanentElectrostaticEnergyExternalFieldContribution();
+./electrostatic.dat:./unittests/unittest-system.cpp:    double ep2 = systems[2].GetPermanentElectrostaticEnergy();
+./electrostatic.dat:./unittests/unittest-system.cpp:    double ei2 = systems[2].GetInducedElectrostaticEnergy();
+./potential/electrostatics/electrostatics.cpp:double Electrostatics::GetPermanentElectrostaticEnergy() { return Eperm_; }
+./potential/electrostatics/electrostatics.cpp:double Electrostatics::GetPermanentElectrostaticEnergyExternalFieldContribution() { return Eperm_ext_; }
+./potential/electrostatics/electrostatics.cpp:double Electrostatics::GetInducedElectrostaticEnergy() { return Eind_; }
+./potential/electrostatics/electrostatics.h:    double GetPermanentElectrostaticEnergy();
+./potential/electrostatics/electrostatics.h:    double GetPermanentElectrostaticEnergyExternalFieldContribution();
+./potential/electrostatics/electrostatics.h:    double GetInducedElectrostaticEnergy();
+Binary file ./potential/electrostatics/libmbx_la-electrostatics.o matches
+./tests/unittests/unittest-gas-electrostatics-mbpol.cpp:    double perm_elec = elec.GetPermanentElectrostaticEnergy();
+./tests/unittests/unittest-gas-electrostatics-mbpol.cpp:    double ind_elec = elec.GetInducedElectrostaticEnergy();
+./unittests/unittest-electrostatics.cpp:        double eind = d.GetInducedElectrostaticEnergy();
+./unittests/unittest-electrostatics.cpp:        double eperm = d.GetPermanentElectrostaticEnergy();
+./unittests/unittest-electrostatics.cpp:                double xeind_ref = xd.GetInducedElectrostaticEnergy();
+./unittests/unittest-electrostatics.cpp:                double xeperm_ref = xd.GetPermanentElectrostaticEnergy();
+./unittests/unittest-electrostatics.cpp:                                double xeind = xd.GetInducedElectrostaticEnergy();
+./unittests/unittest-electrostatics.cpp:                                double xeperm = xd.GetPermanentElectrostaticEnergy();
+./unittests/unittest-electrostatics.cpp:    double eind = d.GetInducedElectrostaticEnergy();
+./unittests/unittest-electrostatics.cpp:    double eperm = d.GetPermanentElectrostaticEnergy();
+./unittests/unittest-electrostatics.cpp:    double eind2 = d2.GetInducedElectrostaticEnergy();
+./unittests/unittest-electrostatics.cpp:    double eperm2 = d2.GetPermanentElectrostaticEnergy();
+./unittests/unittest-system.cpp:        eperm.push_back(systems[i].GetPermanentElectrostaticEnergy());
+./unittests/unittest-system.cpp:        eind.push_back(systems[i].GetInducedElectrostaticEnergy());
+./unittests/unittest-system.cpp:    double ep = systems[1].GetPermanentElectrostaticEnergy();
+./unittests/unittest-system.cpp:    double ei = systems[1].GetInducedElectrostaticEnergy();
+./unittests/unittest-system.cpp:    double epext = systems[1].GetPermanentElectrostaticEnergyExternalFieldContribution();
+./unittests/unittest-system.cpp:    double ep2 = systems[2].GetPermanentElectrostaticEnergy();
+./unittests/unittest-system.cpp:    double ei2 = systems[2].GetInducedElectrostaticEnergy();

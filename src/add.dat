@@ -1,0 +1,124 @@
+./bblock/sys_tools.cpp:    // Intermolecular aDD is always 0.055
+./bblock/sys_tools.cpp:    double aDD = 0.055;
+./bblock/sys_tools.cpp:            aDD = 0.626;
+./bblock/sys_tools.cpp:            aDD = 0.055;
+./bblock/sys_tools.cpp:        aDD = 1.0E24;
+./bblock/sys_tools.cpp:        aDD = 1.0E24;
+./bblock/sys_tools.cpp:            aDD = 0.3;
+./bblock/sys_tools.cpp:            aDD = 0.055;
+./bblock/sys_tools.cpp:    return aDD;
+./potential/electrostatics/electrostatics.cpp:    aDD_ = 0.055;
+./potential/electrostatics/electrostatics.cpp:    aDD_ = 99999;
+./potential/electrostatics/electrostatics.cpp:    double aDD_local = 0.055;
+./potential/electrostatics/electrostatics.cpp:    // Thole damping aDD intermolecular is always 0.055
+./potential/electrostatics/electrostatics.cpp:                                                     i, j, Asqsqi, aDD_local, Efd_2_pool[rank].data(), &ex_thread,
+./potential/electrostatics/electrostatics.cpp:    // Thole damping aDD intermolecular is always 0.055
+./potential/electrostatics/electrostatics.cpp:                        aDD_local, aCD_local, Asqsqi, &ex_thread, &ey_thread, &ez_thread, &phi1_thread,
+./potential/electrostatics/electrostatics.cpp:    double aDD = 0.0;
+./potential/electrostatics/electrostatics.cpp:                // Set the proper aDD
+./potential/electrostatics/electrostatics.cpp:                aDD = systools::GetAdd(is12, is13, is14, mon_id_[fi_mon]);
+./potential/electrostatics/electrostatics.cpp:                                                       in_ptr + fi_crd, m, m, m + 1, nmon, nmon, i, j, Asqsqi, aDD,
+./potential/electrostatics/electrostatics.cpp:    // Thole damping aDD intermolecular is always 0.055
+./potential/electrostatics/electrostatics.cpp:    aDD = 0.055;
+./potential/electrostatics/electrostatics.cpp:                            m2init, nmon2, nmon1, nmon2, i, j, Asqsqi, aDD, Efd_2_pool[rank].data(), &ex_thread,
+./potential/electrostatics/electrostatics.cpp:    double aDD = 0.0;
+./potential/electrostatics/electrostatics.cpp:                // Set the proper aDD
+./potential/electrostatics/electrostatics.cpp:                aDD = systools::GetAdd(is12, is13, is14, mon_id_[fi_mon]);
+./potential/electrostatics/electrostatics.cpp:                                                       in_ptr + fi_crd, m, m, m + 1, nmon, nmon, i, j, Asqsqi, aDD,
+./potential/electrostatics/electrostatics.cpp:    // Thole damping aDD intermolecular is always 0.055
+./potential/electrostatics/electrostatics.cpp:    aDD = 0.055;
+./potential/electrostatics/electrostatics.cpp:                                                         aDD, reordered_Efd2.data(), &ex_thread, &ey_thread,
+./potential/electrostatics/electrostatics.cpp:    double aDD = 0.055; // Thole damping aDD intermolecular is always 0.055
+./potential/electrostatics/electrostatics.cpp:                                                         Asqsqi, aDD, ewald_alpha_, use_pbc, box, box_inverse,
+./potential/electrostatics/electrostatics.cpp:    double aDD = 0.0;
+./potential/electrostatics/electrostatics.cpp:                // Set the proper aDD
+./potential/electrostatics/electrostatics.cpp:                aDD = systools::GetAdd(is12, is13, is14, mon_id_[fi_mon]);
+./potential/electrostatics/electrostatics.cpp:                                                   in_ptr + fi_crd, m, m, m + 1, nmon, nmon, i, j, Asqsqi, aDD,
+./potential/electrostatics/electrostatics.cpp:    // Thole damping aDD intermolecular is always 0.055
+./potential/electrostatics/electrostatics.cpp:    aDD = 0.055;
+./potential/electrostatics/electrostatics.cpp:                                                         Asqsqi, aDD, reordered_Efd2.data(), &ex_thread, &ey_thread,
+./potential/electrostatics/electrostatics.cpp:    double aDD = 0.0;
+./potential/electrostatics/electrostatics.cpp:                // Set the proper aDD
+./potential/electrostatics/electrostatics.cpp:                aDD = systools::GetAdd(is12, is13, is14, mon_id_[fi_mon]);
+./potential/electrostatics/electrostatics.cpp:                                                   in_ptr + fi_crd, m, m, m + 1, nmon, nmon, i, j, Asqsqi, aDD,
+./potential/electrostatics/electrostatics.cpp:    // Thole damping aDD intermolecular is always 0.055
+./potential/electrostatics/electrostatics.cpp:    aDD = 0.055;
+./potential/electrostatics/electrostatics.cpp:                                                         aDD, reordered_Efd2.data(), &ex_thread, &ey_thread,
+./potential/electrostatics/electrostatics.cpp:    double aDD = 0.0;
+./potential/electrostatics/electrostatics.cpp:                // Set the proper aDD
+./potential/electrostatics/electrostatics.cpp:                aDD = systools::GetAdd(is12, is13, is14, mon_id_all_[fi_mon]);
+./potential/electrostatics/electrostatics.cpp:                            nmon, nmon, i, j, aDD, aCD_, Asqsqi, &ex, &ey, &ez, &phi1, phi_all_.data() + fi_sites,
+./potential/electrostatics/electrostatics.cpp:    // Thole damping aDD intermolecular is always 0.055
+./potential/electrostatics/electrostatics.cpp:    aDD = 0.055;
+./potential/electrostatics/electrostatics.cpp:                            reordered_mon2_size, nmon1, reordered_mon2_size, i, 0, aDD, aCD_, Asqsqi, &ex_thread, &ey_thread, &ez_thread,
+./potential/electrostatics/electrostatics.cpp:    double aDD = 0.0;
+./potential/electrostatics/electrostatics.cpp:                // Set the proper aDD
+./potential/electrostatics/electrostatics.cpp:                aDD = systools::GetAdd(is12, is13, is14, mon_id_all_[fi_mon]);
+./potential/electrostatics/electrostatics.cpp:                        nmon, i, j, aDD, aCD_, Asqsqi, &ex, &ey, &ez, &phi1, phi_all_.data() + fi_sites,
+./potential/electrostatics/electrostatics.cpp:    // Thole damping aDD intermolecular is always 0.055
+./potential/electrostatics/electrostatics.cpp:    aDD = 0.055;
+./potential/electrostatics/electrostatics.cpp:                            reordered_mon2_size, nmon1, reordered_mon2_size, i, 0, aDD, aCD_, Asqsqi, &ex_thread, &ey_thread, &ez_thread,
+./potential/electrostatics/electrostatics.h:    double aCC_, aCD_, aDD_;
+./potential/electrostatics/fields.cpp:                                              size_t nmon2, size_t site_i, size_t site_j, double Asqsqi, double aDD,
+./potential/electrostatics/fields.cpp:                const double exp1 = std::exp(-aDD * rA4);
+./potential/electrostatics/fields.cpp:                const double s2r5_3 = scale * (bn2 - (3 + 4 * aDD * rA4) * exp1 * ri * risq * risq);
+./potential/electrostatics/fields.cpp:                                              size_t nmon2, size_t site_i, size_t site_j, double Asqsqi, double aDD,
+./potential/electrostatics/fields.cpp:        const double exp1 = std::exp(-aDD * rA4);
+./potential/electrostatics/fields.cpp:        const double s2r5_3 = scale * (bn2 - (3 + 4 * aDD * rA4) * exp1 * ri * risq * risq);
+./potential/electrostatics/fields.cpp:                                              size_t nmon2, size_t site_i, size_t site_j, double aDD,
+./potential/electrostatics/fields.cpp:                                              size_t nmon2, size_t site_i, size_t site_j, double Asqsqi, double aDD,
+./potential/electrostatics/fields.cpp:        const double exp1 = std::exp(-aDD * rA4);
+./potential/electrostatics/fields.cpp:        const double s2r5_3 = scale * (bn2 - (3 + 4 * aDD * rA4) * exp1 * ri * risq * risq);
+./potential/electrostatics/fields.cpp:    double aDD, double aCD, double Asqsqi, double *grdx, double *grdy, double *grdz, double *phi1, double *phi2,
+./potential/electrostatics/fields.cpp:            const double adrA4 = aDD * 4.0 * rA4;
+./potential/electrostatics/fields.cpp:            const double exp1d = std::exp(-aDD * rA4);
+./potential/electrostatics/fields.cpp:    double aDD, double aCD, double Asqsqi, double *grdx, double *grdy, double *grdz, double *phi1, double *phi2,
+./potential/electrostatics/fields.cpp:        const double adrA4 = aDD * 4.0 * rA4;
+./potential/electrostatics/fields.cpp:        const double exp1d = std::exp(-aDD * rA4);
+./potential/electrostatics/fields.cpp://        const double addrA4 = aDD * rA4;
+./potential/electrostatics/fields.h:                             double aDD,                              // Thole damping aDD (dipole - dipole)
+./potential/electrostatics/fields.h:                                          double aDD,                              // Thole damping aDD (dipole - dipole)
+./potential/electrostatics/fields.h:                                        double aDD,                              // Thole damping aDD (dipole - dipole)
+./potential/electrostatics/fields.h:                                    double aDD,                              // Thole damping aDD (dipole - dipole)
+./potential/electrostatics/fields.h:                            double aDD, double aCD,          // Thole damping aCC and aDD
+./potential/electrostatics/fields.h:                            double aDD, double aCD,          // Thole damping aCC and aDD
+./potential/electrostatics/files_not_used/electrostatic_tensors.cpp:                                double Asqsqi, double aDD, size_t nsites, double* ts1_mon1, double* ts1_mon2,
+./potential/electrostatics/files_not_used/electrostatic_tensors.cpp:        const double arA4 = aDD * rA4;
+./potential/electrostatics/files_not_used/electrostatic_tensors.cpp:        const double s2r5_3 = (3.0 * s1r3 - 4.0 * aDD * rA4 * exp1r * risq) * risq;
+./potential/electrostatics/files_not_used/electrostatic_tensors.h:                     double aDD,                    // Thole damping aDD (dipole - dipole)
+./potential/electrostatics/files_not_used/electrostatic_tensors_short.cpp:                                     double Asqsqi, double aDD, size_t nsites, double* ts1, double* ts2) {
+./potential/electrostatics/files_not_used/electrostatic_tensors_short.cpp:        const double arA4 = aDD * rA4;
+./potential/electrostatics/files_not_used/electrostatic_tensors_short.cpp:        const double s2r5_3 = (3.0 * s1r3 - 4.0 * aDD * rA4 * exp1r * risq) * risq;
+./potential/electrostatics/files_not_used/electrostatic_tensors_short.h:                     double aDD,                    // Thole damping aDD (dipole - dipole)
+./unittests/unittest-systools.cpp:        double aDD_12 = 0.626;
+./unittests/unittest-systools.cpp:        double aDD_13 = 0.055;
+./unittests/unittest-systools.cpp:        double aDD_14 = 0.055;
+./unittests/unittest-systools.cpp:        double aDD_inter = 0.055;
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, f, f, mon) == Approx(aDD_inter).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(t, f, f, mon) == Approx(aDD_12).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, t, f, mon) == Approx(aDD_13).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, f, t, mon) == Approx(aDD_14).margin(TOL));
+./unittests/unittest-systools.cpp:        double aDD_12 = 0.3;
+./unittests/unittest-systools.cpp:        double aDD_13 = 0.3;
+./unittests/unittest-systools.cpp:        double aDD_14 = 0.055;
+./unittests/unittest-systools.cpp:        double aDD_inter = 0.055;
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, f, f, mon) == Approx(aDD_inter).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(t, f, f, mon) == Approx(aDD_12).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, t, f, mon) == Approx(aDD_13).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, f, t, mon) == Approx(aDD_14).margin(TOL));
+./unittests/unittest-systools.cpp:        double aDD_12 = 0.3;
+./unittests/unittest-systools.cpp:        double aDD_13 = 0.3;
+./unittests/unittest-systools.cpp:        double aDD_14 = 0.055;
+./unittests/unittest-systools.cpp:        double aDD_inter = 0.055;
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, f, f, mon) == Approx(aDD_inter).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(t, f, f, mon) == Approx(aDD_12).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, t, f, mon) == Approx(aDD_13).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, f, t, mon) == Approx(aDD_14).margin(TOL));
+./unittests/unittest-systools.cpp:        double aDD_12 = 0.3;
+./unittests/unittest-systools.cpp:        double aDD_13 = 0.3;
+./unittests/unittest-systools.cpp:        double aDD_14 = 0.055;
+./unittests/unittest-systools.cpp:        double aDD_inter = 0.055;
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, f, f, mon) == Approx(aDD_inter).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(t, f, f, mon) == Approx(aDD_12).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, t, f, mon) == Approx(aDD_13).margin(TOL));
+./unittests/unittest-systools.cpp:        REQUIRE(systools::GetAdd(f, f, t, mon) == Approx(aDD_14).margin(TOL));

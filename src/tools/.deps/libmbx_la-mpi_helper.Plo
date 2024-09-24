@@ -1,0 +1,4 @@
+tools/libmbx_la-mpi_helper.lo: tools/mpi_helper.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

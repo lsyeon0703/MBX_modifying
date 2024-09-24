@@ -1,0 +1,6 @@
+tools/libmbx_la-water_monomer_lp.lo: tools/water_monomer_lp.cpp \
+ /usr/include/stdc-predef.h tools/water_monomer_lp.h
+
+/usr/include/stdc-predef.h:
+
+tools/water_monomer_lp.h:

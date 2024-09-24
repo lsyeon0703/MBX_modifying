@@ -1,0 +1,10 @@
+./bblock/system.cpp:        std::copy(polaris.begin() + ini, polaris.begin() + fin, polaris_.begin() + ini_new);
+./bblock/system.cpp:    for (auto i = polaris.begin(); i != polaris.end(); i++) polaris_.push_back(*i);
+./bblock/system.cpp:    polaris_ = std::vector<double>(numsites_, 0.0);         //SY// check numat_ or numsites_
+./bblock/system.cpp:        std::copy(polaris.begin() + fi_at[k], polaris.begin() + fi_at[k] + nat_[k], polaris_.begin() + count);
+./bblock/system.h:    std::vector<double> polaris_;               //SY//
+./pol.dat:./bblock/system.cpp:        std::copy(polaris.begin() + ini, polaris.begin() + fin, polaris_.begin() + ini_new);
+./pol.dat:./bblock/system.cpp:    for (auto i = polaris.begin(); i != polaris.end(); i++) polaris_.push_back(*i);
+./pol.dat:./bblock/system.cpp:    polaris_ = std::vector<double>(numsites_, 0.0);         //SY// check numat_ or numsites_
+./pol.dat:./bblock/system.cpp:        std::copy(polaris.begin() + fi_at[k], polaris.begin() + fi_at[k] + nat_[k], polaris_.begin() + count);
+./pol.dat:./bblock/system.h:    std::vector<double> polaris_;               //SY//

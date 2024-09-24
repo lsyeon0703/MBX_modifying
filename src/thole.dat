@@ -1,0 +1,2 @@
+./bblock/sys_tools.h: * @brief Gets the thole damping for dipole dipole
+./bblock/sys_tools.h: * thole damping for dipole-dipole for a given monomer

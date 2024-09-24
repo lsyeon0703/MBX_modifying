@@ -1,0 +1,8 @@
+potential/3b/liba1b2c4_la-poly_3b_A1B2C4_D1E2_D1E2_deg3_grad_v1.lo: \
+ potential/3b/poly_3b_A1B2C4_D1E2_D1E2_deg3_grad_v1.cpp \
+ /usr/include/stdc-predef.h \
+ potential/3b/poly_3b_A1B2C4_D1E2_D1E2_deg3_v1.h
+
+/usr/include/stdc-predef.h:
+
+potential/3b/poly_3b_A1B2C4_D1E2_D1E2_deg3_v1.h:

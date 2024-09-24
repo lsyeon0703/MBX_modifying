@@ -1,0 +1,8 @@
+potential/3b/libmbx_la-poly-3b-h2o-ion-v1x_deg4_filtered.lo: \
+ potential/3b/poly-3b-h2o-ion-v1x_deg4_filtered.cpp \
+ /usr/include/stdc-predef.h \
+ potential/3b/poly-3b-h2o-ion-v1x_deg4_filtered.h
+
+/usr/include/stdc-predef.h:
+
+potential/3b/poly-3b-h2o-ion-v1x_deg4_filtered.h:

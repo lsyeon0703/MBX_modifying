@@ -1,0 +1,224 @@
+tools/libmbx_la-pbctools.lo: tools/pbctools.cpp \
+ /usr/include/stdc-predef.h tools/pbctools.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/cmath \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/x86_64-pc-linux-gnu/bits/c++config.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
+ /usr/include/gnu/stubs-64.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/cpp_type_traits.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/ext/type_traits.h \
+ /usr/include/math.h /usr/include/bits/huge_val.h \
+ /usr/include/bits/huge_valf.h /usr/include/bits/huge_vall.h \
+ /usr/include/bits/inf.h /usr/include/bits/nan.h \
+ /usr/include/bits/mathdef.h /usr/include/bits/mathcalls.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/vector \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_algobase.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/functexcept.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/exception_defines.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/ext/numeric_traits.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_pair.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/move.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/concept_check.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/type_traits \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_iterator_base_types.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_iterator_base_funcs.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/debug/assertions.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_iterator.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/ptr_traits.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/debug/debug.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/predefined_ops.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/allocator.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/x86_64-pc-linux-gnu/bits/c++allocator.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/ext/new_allocator.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/new \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/exception \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/atomic_lockfree_defines.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/exception_ptr.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/nested_exception.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/memoryfwd.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_construct.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/ext/alloc_traits.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/alloc_traits.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_uninitialized.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_vector.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/initializer_list \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_bvector.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/functional_hash.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/hash_bytes.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/range_access.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/vector.tcc \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/stdlib.h \
+ /home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/cstdlib \
+ /usr/include/stdlib.h \
+ /home2/seungchang/software/gcc6.5.0/lib/gcc/x86_64-pc-linux-gnu/6.5.0/include/stddef.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/byteswap-16.h \
+ /usr/include/xlocale.h /usr/include/sys/types.h /usr/include/time.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/sigset.h /usr/include/bits/time.h \
+ /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-float.h
+
+/usr/include/stdc-predef.h:
+
+tools/pbctools.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/cmath:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/x86_64-pc-linux-gnu/bits/c++config.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/cpp_type_traits.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/ext/type_traits.h:
+
+/usr/include/math.h:
+
+/usr/include/bits/huge_val.h:
+
+/usr/include/bits/huge_valf.h:
+
+/usr/include/bits/huge_vall.h:
+
+/usr/include/bits/inf.h:
+
+/usr/include/bits/nan.h:
+
+/usr/include/bits/mathdef.h:
+
+/usr/include/bits/mathcalls.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/vector:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_algobase.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/functexcept.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/exception_defines.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/ext/numeric_traits.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_pair.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/move.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/concept_check.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/type_traits:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_iterator_base_types.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_iterator_base_funcs.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/debug/assertions.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_iterator.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/ptr_traits.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/debug/debug.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/predefined_ops.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/allocator.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/ext/new_allocator.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/new:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/exception:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/atomic_lockfree_defines.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/exception_ptr.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/nested_exception.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/memoryfwd.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_construct.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/ext/alloc_traits.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/alloc_traits.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_uninitialized.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_vector.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/initializer_list:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/stl_bvector.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/functional_hash.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/hash_bytes.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/range_access.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/bits/vector.tcc:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/stdlib.h:
+
+/home2/seungchang/software/gcc6.5.0/include/c++/6.5.0/cstdlib:
+
+/usr/include/stdlib.h:
+
+/home2/seungchang/software/gcc6.5.0/lib/gcc/x86_64-pc-linux-gnu/6.5.0/include/stddef.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/bits/sigset.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/bits/stdlib-float.h:

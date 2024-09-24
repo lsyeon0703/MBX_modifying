@@ -1,0 +1,84 @@
+./bblock/external_call.cpp:        my_s->AddMonomer(xyz, vAtNames, polaris, id);           //SY//
+./bblock/external_call.cpp:            my_sf[k]->AddMonomer(xyz, vAtNames, polaris, id);           //SY//
+./bblock/external_call.cpp:        my_s->AddMonomer(xyz, vAtNames, polaris,  id);          //SY//
+./bblock/system.cpp:void System::AddMonomer(std::vector<double> xyz, std::vector<std::string> atoms, std::vector<double> polaris, std::string id, size_t islocal,
+./bblock/system.cpp:        AddMonomerInfo();
+./bblock/system.cpp://    // AddMonomerInfo();
+./bblock/system.cpp:void System::AddMonomerInfo() {
+./bblock/system.h:    void AddMonomer(std::vector<double> xyz, std::vector<std::string> atoms, std::vector<double> polaris, std::string id, size_t islocal = 1,
+./bblock/system.h:    void AddMonomerInfo();
+Binary file ./bblock/libmbx_la-external_call.o matches
+Binary file ./bblock/libmbx_la-system.o matches
+./io_tools/read_nrg.cpp:        sys.AddMonomer(xyz, names, polaris, mon_name);  //SY//
+Binary file ./io_tools/libmbx_la-read_nrg.o matches
+./main/mb_decomp.cpp:                    subsystem.AddMonomer(xyz, vAtNames, id);
+./main/single_point.cpp:        std::vector<double> polarisabilities = systems[2].AddMonomer(xyz, names, polaris, mon_name);
+./pol.dat:./bblock/system.cpp:void System::AddMonomer(std::vector<double> xyz, std::vector<std::string> atoms, std::vector<double> polaris, std::string id, size_t islocal,
+./pol.dat:./bblock/system.h:    void AddMonomer(std::vector<double> xyz, std::vector<std::string> atoms, std::vector<double> polaris, std::string id, size_t islocal = 1,
+./pol.dat:./bblock/external_call.cpp:        my_s->AddMonomer(xyz, vAtNames, polaris, id);           //SY//
+./pol.dat:./bblock/external_call.cpp:            my_sf[k]->AddMonomer(xyz, vAtNames, polaris, id);           //SY//
+./pol.dat:./bblock/external_call.cpp:        my_s->AddMonomer(xyz, vAtNames, polaris,  id);          //SY//
+./pol.dat:./io_tools/read_nrg.cpp:        sys.AddMonomer(xyz, names, polaris, mon_name);  //SY//
+./pol.dat:./main/single_point.cpp:        std::vector<double> polarisabilities = sys[2].AddMonomer(xyz, names, polaris, mon_name);
+./tests/addclusters_test.cpp:        s1.AddMonomer(c, a, monid[i], 1, fi + 1);
+./tests/addclusters_test.cpp:        s2.AddMonomer(c, a, monid[i], 0, fi + 1);
+./tests/addclusters_test.cpp:        s1.AddMonomer(c, a, monid[i], 0, fi + 1);
+./tests/addclusters_test.cpp:        s2.AddMonomer(c, a, monid[i], 1, fi + 1);
+./tests/mbd.cpp:    my_sys_d1.AddMonomer(xyz, atoms, mon_ids[0]);
+./tests/mbd.cpp:    my_sys_d2.AddMonomer(xyz, atoms, mon_ids[0]);
+./tests/mbd.cpp:    my_sys_d1.AddMonomer(xyz, atoms, mon_ids[1]);
+./tests/mbd.cpp:    my_sys_d3.AddMonomer(xyz, atoms, mon_ids[1]);
+./tests/mbd.cpp:    my_sys_d2.AddMonomer(xyz, atoms, mon_ids[2]);
+./tests/mbd.cpp:    my_sys_d3.AddMonomer(xyz, atoms, mon_ids[2]);
+./tests/system-test.cpp:        system_ref.AddMonomer(xyz, ats, monid);
+./tests/system-test.cpp:    // Test AddMonomer()
+./tests/system-test.cpp:    test = "AddMonomer()";
+./tests/system-test.cpp:        system_ref.AddMonomer(v, at_v, id_v);
+./tests/system-test.cpp:    // Indirect test of AddMonomerInfo()
+./tests/system-test.cpp:    test = "AddMonomerInfo()";
+./tests/system-test.cpp:    s_wrong.AddMonomer(v, at_v, id_v);
+./tests/system-test.cpp:    s_also_wrong.AddMonomer(v, at_v, id_v);
+./tests/unittests/unittest-box-shapes.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-box-shapes.cpp:    //        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-ch4-monomer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-co2-monomer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-dummy-monomer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-br-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-cl-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-cs-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-cs-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-f-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-h2o-cs-trimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-h2o-cs-trimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-h2o-k-trimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-h2o-li-trimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-h2o-na-trimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-h2o-na-trimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-h2o-rb-trimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-i-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-k-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-li-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-na-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-na-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-rb-dimer.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-virial.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-virial.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-virial.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h2o-virial.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-h4-dummy.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-pbc-1b-mbpol-findif.cpp:        my_sys.AddMonomer(xyz, ats, monomer_names[i]);
+./tests/unittests/unittest-pbc-2bpoly-mbpol-findif.cpp:        my_sys.AddMonomer(xyz, ats, monomer_names[i]);
+./tests/unittests/unittest-pbc-3bpoly-mbpol-findif.cpp:        my_sys.AddMonomer(xyz, ats, monomer_names[i]);
+./tests/unittests/unittest-pbc-dispersion-mbpol-findif.cpp:        my_sys.AddMonomer(xyz, ats, monomer_names[i]);
+./tests/unittests/unittest-pbc-electrostatics-mbpol-findif.cpp:        my_sys.AddMonomer(xyz, ats, monomer_names[i]);
+./tests/unittests/unittest-system.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./tests/unittests/unittest-system.cpp:    SECTION("AddMonomer()") {
+./tests/unittests/unittest-system.cpp:                my_system.AddMonomer(v, at_v, id_v);
+./tests/unittests/unittest-system.cpp:    SECTION("AddMonomerInfo()") {
+./tests/unittests/unittest-system.cpp:            s_wrong.AddMonomer(v, at_v, id_v);
+./tests/unittests/unittest-system.cpp:            s_wrong.AddMonomer(v, at_v, id_v);
+./tests/unittests/unittest-system.cpp:        my_system.AddMonomer(xyz, ats, monid);
+./unittests/unittest-system.cpp:        s.AddMonomer(xyz, atoms, mon_ids[i]);
+./unittests/unittest-system.cpp:        s.AddMonomer(xyz, atoms, testData.monomer_names[i]);
+./unittests/unittest-system.cpp:        s.AddMonomer(xyz, atoms, testData.monomer_names[i]);
+./unittests/unittest-system.cpp:            systems[2].AddMonomer(xyz, ats, id, islocal, tag);

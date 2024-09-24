@@ -1,0 +1,7 @@
+potential/2b/libmbx_la-poly_2b_A2_A2_deg6_nograd_v1.lo: \
+ potential/2b/poly_2b_A2_A2_deg6_nograd_v1.cpp /usr/include/stdc-predef.h \
+ potential/2b/poly_2b_A2_A2_deg6_v1.h
+
+/usr/include/stdc-predef.h:
+
+potential/2b/poly_2b_A2_A2_deg6_v1.h:

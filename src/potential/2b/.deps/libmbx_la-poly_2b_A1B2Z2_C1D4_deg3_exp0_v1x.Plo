@@ -1,0 +1,8 @@
+potential/2b/libmbx_la-poly_2b_A1B2Z2_C1D4_deg3_exp0_v1x.lo: \
+ potential/2b/poly_2b_A1B2Z2_C1D4_deg3_exp0_v1x.cpp \
+ /usr/include/stdc-predef.h \
+ potential/2b/poly_2b_A1B2Z2_C1D4_deg3_exp0_v1x.h
+
+/usr/include/stdc-predef.h:
+
+potential/2b/poly_2b_A1B2Z2_C1D4_deg3_exp0_v1x.h:
